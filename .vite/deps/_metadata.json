@@ -1,79 +1,79 @@
 {
-  "hash": "96ee0fbf",
+  "hash": "1ff50949",
   "configHash": "70bfbc46",
-  "lockfileHash": "3e66d57e",
-  "browserHash": "484dc82e",
+  "lockfileHash": "b1b57de7",
+  "browserHash": "942fadf1",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "8ec3bf7d",
+      "fileHash": "fd8335ba",
       "needsInterop": true
     },
     "react-dom": {
       "src": "../../node_modules/react-dom/index.js",
       "file": "react-dom.js",
-      "fileHash": "29c1c4bc",
+      "fileHash": "35e2cd49",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "b209772f",
+      "fileHash": "ea1e59a1",
       "needsInterop": true
     },
     "react/jsx-runtime": {
       "src": "../../node_modules/react/jsx-runtime.js",
       "file": "react_jsx-runtime.js",
-      "fileHash": "c2e02d2e",
+      "fileHash": "0cab07b8",
       "needsInterop": true
     },
     "@gravity-ui/uikit": {
       "src": "../../node_modules/@gravity-ui/uikit/build/esm/index.js",
       "file": "@gravity-ui_uikit.js",
-      "fileHash": "97be8b06",
+      "fileHash": "3e66099a",
       "needsInterop": false
     },
     "@tanstack/react-query": {
       "src": "../../node_modules/@tanstack/react-query/build/modern/index.js",
       "file": "@tanstack_react-query.js",
-      "fileHash": "8b0d5232",
+      "fileHash": "a3e40227",
       "needsInterop": false
     },
     "@tanstack/react-router": {
       "src": "../../node_modules/@tanstack/react-router/dist/esm/index.js",
       "file": "@tanstack_react-router.js",
-      "fileHash": "3bf352f4",
+      "fileHash": "bce8ceea",
       "needsInterop": false
     },
     "@tanstack/router-devtools": {
       "src": "../../node_modules/@tanstack/router-devtools/dist/esm/index.js",
       "file": "@tanstack_router-devtools.js",
-      "fileHash": "870191fc",
+      "fileHash": "38608905",
       "needsInterop": false
     },
     "clsx": {
       "src": "../../node_modules/clsx/dist/clsx.mjs",
       "file": "clsx.js",
-      "fileHash": "ba5b40a3",
+      "fileHash": "358de72d",
       "needsInterop": false
     },
     "lucide-react": {
       "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
       "file": "lucide-react.js",
-      "fileHash": "6eb33c07",
+      "fileHash": "328215ab",
       "needsInterop": false
     },
     "query-string": {
       "src": "../../node_modules/query-string/index.js",
       "file": "query-string.js",
-      "fileHash": "363b2a39",
+      "fileHash": "6b63747c",
       "needsInterop": false
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "b4f492c5",
+      "fileHash": "314cafd2",
       "needsInterop": true
     }
   },
