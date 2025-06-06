@@ -5,7 +5,7 @@ type Props = {}
 
 export const ViewSignIn = (props: Props) => {
   return (
-    <div className="space-y-4 rounded-lg p-10 shadow-[0_0_20px_10px_rgba(0,0,0,0.1)]">
+    <div className="space-y-4 rounded-lg p-10">
       <p className="text-2xl font-medium">Войти</p>
       <p>
         Нет аккаунта?{" "}

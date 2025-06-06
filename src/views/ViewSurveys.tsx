@@ -1,8 +1,11 @@
 import { Select, TextInput, Button, Icon, withTableCopy, withTableSettings, DropdownMenu } from "@gravity-ui/uikit"
 import { BriefcaseBusiness, EllipsisVertical, Link, Plus, Search, UserLock } from "lucide-react"
 import { useState } from "react"
+import { Table, withTableActions } from "@gravity-ui/uikit"
 import { Rows3, Grid2X2, Bookmark } from "lucide-react"
 import clsx from "clsx"
+import { Pagination, PaginationProps } from "@gravity-ui/uikit"
+import React from "react"
 
 type Props = {}
 type PropsItems = {
@@ -78,6 +81,10 @@ const mockItems: PropsItems[] = [
 
 export const ViewSurveys = (props: Props) => {
   const [view, setView] = useState<ViewProps>("grid")
+
+  const [state, setState] = React.useState({ page: 1, pageSize: 100 })
+
+  const handleUpdate: PaginationProps["onUpdate"] = (page, pageSize) => setState((prevState) => ({ ...prevState, page, pageSize }))
   return (
     <div className="container">
       <div className="flex items-center justify-between">
@@ -85,10 +92,6 @@ export const ViewSurveys = (props: Props) => {
         <Button
           view="action"
           size="l">
-          <Icon
-            data={Plus}
-            size={18}
-          />
           Создать опрос
         </Button>
       </div>
@@ -112,14 +115,12 @@ export const ViewSurveys = (props: Props) => {
             </Select>
           </div>
 
-          <div>
-            <Button
-              view="outlined"
-              size="l"
-              className="w-9 min-w-9 !bg-white">
-              <Bookmark className="absolute top-1/2 left-1/2 size-5 -translate-x-1/2 -translate-y-1/2" />
-            </Button>
-          </div>
+          <Button
+            view="outlined"
+            size="l"
+            className="w-9 min-w-9 !bg-white">
+            <Bookmark className="absolute top-1/2 left-1/2 size-5 -translate-x-1/2 -translate-y-1/2" />
+          </Button>
         </div>
 
         <div className="flex items-center space-x-1.5 rounded-xl bg-black/5 p-1">
@@ -132,7 +133,7 @@ export const ViewSurveys = (props: Props) => {
           </button>
           <button
             onClick={() => setView("grid")}
-           className={clsx("relative h-8 w-11 rounded-lg transition-all duration-300", {
+            className={clsx("relative h-8 w-11 rounded-lg transition-all duration-300", {
               "bg-white": view === "grid",
             })}>
             <Grid2X2 className="absolute top-1/2 left-1/2 size-4 -translate-x-1/2 -translate-y-1/2 stroke-black" />
@@ -182,30 +183,42 @@ export const ViewSurveys = (props: Props) => {
                   <button>
                     <Link className="size-5" />
                   </button>
-                  <DropdownMenu
-                    switcher={
-                      <button className="translate-y-1">
-                        <EllipsisVertical className="size-5 stroke-black/50" />
-                      </button>
-                    }
-                    items={[
-                      {
-                        action: () => alert("Действие 1"),
-                        text: "Действие 1",
-                      },
-                      {
-                        action: () => alert("Действие 2"),
-                        text: "Действие 2",
-                        theme: "danger",
-                      },
-                    ]}
-                  />
+                  <div>
+                    <DropdownMenu
+                      renderSwitcher={(props) => (
+                        <button
+                          className="translate-y-0.5"
+                          {...props}>
+                          <EllipsisVertical className="size-5 stroke-black/50" />
+                        </button>
+                      )}
+                      items={[
+                        {
+                          action: () => alert("Rename"),
+                          text: "Rename",
+                        },
+                        {
+                          action: () => alert("Delete"),
+                          text: "Delete",
+                          theme: "danger",
+                        },
+                      ]}
+                    />
+                  </div>
                 </div>
               </div>
             )
           })}
         </div>
       </div>
+
+      <Pagination
+        className="mt-8"
+        page={1}
+        pageSize={100}
+        total={1000}
+        onUpdate={handleUpdate}
+      />
     </div>
   )
 }

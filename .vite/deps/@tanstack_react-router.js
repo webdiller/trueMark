@@ -64,7 +64,7 @@ import {
   useRouterState,
   useSearch,
   useStableCallback
-} from "./chunk-VHHZD562.js";
+} from "./chunk-JRUZSIDA.js";
 import {
   PathParamError,
   SearchParamError,
@@ -87,7 +87,6 @@ import {
   functionalUpdate,
   getInitialRouterState,
   interpolatePath,
-  invariant,
   isMatch,
   isNotFound,
   isPlainArray,
@@ -113,11 +112,14 @@ import {
   trimPath,
   trimPathLeft,
   trimPathRight
-} from "./chunk-KV4S5HPH.js";
-import "./chunk-T46KWSWP.js";
-import "./chunk-XC26ZK3T.js";
-import "./chunk-E55NSNTN.js";
-import "./chunk-4MBMRILA.js";
+} from "./chunk-MSYNJQ2M.js";
+import {
+  invariant
+} from "./chunk-KDZ7CXOI.js";
+import "./chunk-JGD6IGJ4.js";
+import "./chunk-67WGWSRF.js";
+import "./chunk-2CLD7BNN.js";
+import "./chunk-WOOG5QLI.js";
 export {
   Asset,
   Await,

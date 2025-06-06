@@ -26,11 +26,11 @@
 .yc-button:active {
   transform: scale(1);
 }
-.yc-select {
+.yc-select, .g-select-control {
   background-color: white;
 }
 @layer base {
-  * {
+html {
     font-size: 14px;
     font-family:
       Roboto Flex,
