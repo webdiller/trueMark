@@ -28,5 +28,4 @@ export default defineConfig({
     emptyOutDir: true,
   },
   plugins: [react(), TanStackRouterVite(), tailwindcss()],
-  base: 'https://github.io/webdiller/trueMark/',
 })
