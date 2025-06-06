@@ -9,9 +9,8 @@ import {
 import {
   useRouter,
   useRouterState
-} from "./chunk-Z6MD5Z3G.js";
-import "./chunk-MSYNJQ2M.js";
-import "./chunk-KDZ7CXOI.js";
+} from "./chunk-VHHZD562.js";
+import "./chunk-KV4S5HPH.js";
 import "./chunk-T46KWSWP.js";
 import {
   require_jsx_runtime
@@ -88,7 +87,7 @@ var TanStackRouterDevtoolsCore = class {
       if (__privateGet(this, _Component)) {
         Devtools = __privateGet(this, _Component);
       } else {
-        Devtools = lazy(() => import("./FloatingTanStackRouterDevtools-ZZHPXASI.js"));
+        Devtools = lazy(() => import("./FloatingTanStackRouterDevtools-A367S7O4.js"));
         __privateSet(this, _Component, Devtools);
       }
       return createComponent(ShadowDomTargetContext.Provider, {
@@ -201,7 +200,7 @@ var TanStackRouterDevtoolsPanelCore = class {
       if (__privateGet2(this, _Component2)) {
         BaseTanStackRouterDevtoolsPanel = __privateGet2(this, _Component2);
       } else {
-        BaseTanStackRouterDevtoolsPanel = lazy(() => import("./BaseTanStackRouterDevtoolsPanel-DJ4OH3AX.js"));
+        BaseTanStackRouterDevtoolsPanel = lazy(() => import("./BaseTanStackRouterDevtoolsPanel-WQSUH5CP.js"));
         __privateSet2(this, _Component2, BaseTanStackRouterDevtoolsPanel);
       }
       return createComponent(ShadowDomTargetContext.Provider, {

@@ -1,9 +1,9 @@
 import {
   BaseTanStackRouterDevtoolsPanel
-} from "./chunk-3C2BMLHV.js";
+} from "./chunk-LWAAGITP.js";
+import "./chunk-KDVGFZWC.js";
 import "./chunk-TGF67CJS.js";
-import "./chunk-MSYNJQ2M.js";
-import "./chunk-KDZ7CXOI.js";
+import "./chunk-KV4S5HPH.js";
 import "./chunk-4MBMRILA.js";
 export {
   BaseTanStackRouterDevtoolsPanel,

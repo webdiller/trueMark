@@ -1,106 +1,109 @@
 {
-  "hash": "7677cd9d",
+  "hash": "b5977402",
   "configHash": "70bfbc46",
-  "lockfileHash": "9156900c",
-  "browserHash": "a649940b",
+  "lockfileHash": "9f3ab9a9",
+  "browserHash": "fe69f676",
   "optimized": {
     "react": {
       "src": "../../node_modules/react/index.js",
       "file": "react.js",
-      "fileHash": "0331316d",
+      "fileHash": "ea79f85b",
       "needsInterop": true
     },
     "react-dom": {
       "src": "../../node_modules/react-dom/index.js",
       "file": "react-dom.js",
-      "fileHash": "eb95d05f",
+      "fileHash": "e59ae6a1",
       "needsInterop": true
     },
     "react/jsx-dev-runtime": {
       "src": "../../node_modules/react/jsx-dev-runtime.js",
       "file": "react_jsx-dev-runtime.js",
-      "fileHash": "9f3cc420",
+      "fileHash": "0beae637",
       "needsInterop": true
     },
     "react/jsx-runtime": {
       "src": "../../node_modules/react/jsx-runtime.js",
       "file": "react_jsx-runtime.js",
-      "fileHash": "e86562cd",
+      "fileHash": "30ccd414",
       "needsInterop": true
     },
     "@gravity-ui/icons": {
       "src": "../../node_modules/@gravity-ui/icons/esm/index.js",
       "file": "@gravity-ui_icons.js",
-      "fileHash": "30e18969",
+      "fileHash": "be259f40",
       "needsInterop": false
     },
     "@gravity-ui/uikit": {
       "src": "../../node_modules/@gravity-ui/uikit/build/esm/index.js",
       "file": "@gravity-ui_uikit.js",
-      "fileHash": "bc73dff8",
+      "fileHash": "5e62559c",
       "needsInterop": false
     },
     "@tanstack/react-query": {
       "src": "../../node_modules/@tanstack/react-query/build/modern/index.js",
       "file": "@tanstack_react-query.js",
-      "fileHash": "34531c5d",
+      "fileHash": "e666aa0a",
       "needsInterop": false
     },
     "@tanstack/react-router": {
       "src": "../../node_modules/@tanstack/react-router/dist/esm/index.js",
       "file": "@tanstack_react-router.js",
-      "fileHash": "134999ed",
+      "fileHash": "1ea4354d",
       "needsInterop": false
     },
     "@tanstack/router-devtools": {
       "src": "../../node_modules/@tanstack/router-devtools/dist/esm/index.js",
       "file": "@tanstack_router-devtools.js",
-      "fileHash": "51d1249c",
+      "fileHash": "e8abd621",
+      "needsInterop": false
+    },
+    "clsx": {
+      "src": "../../node_modules/clsx/dist/clsx.mjs",
+      "file": "clsx.js",
+      "fileHash": "f4e5d0c6",
       "needsInterop": false
     },
     "lucide-react": {
       "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
       "file": "lucide-react.js",
-      "fileHash": "08c0d3e5",
+      "fileHash": "c87d96d3",
       "needsInterop": false
     },
     "query-string": {
       "src": "../../node_modules/query-string/index.js",
       "file": "query-string.js",
-      "fileHash": "f76ed5d0",
+      "fileHash": "21e7a6d5",
       "needsInterop": false
     },
     "react-dom/client": {
       "src": "../../node_modules/react-dom/client.js",
       "file": "react-dom_client.js",
-      "fileHash": "b88b408a",
+      "fileHash": "77e79bec",
       "needsInterop": true
     }
   },
   "chunks": {
-    "BaseTanStackRouterDevtoolsPanel-DJ4OH3AX": {
-      "file": "BaseTanStackRouterDevtoolsPanel-DJ4OH3AX.js"
+    "BaseTanStackRouterDevtoolsPanel-WQSUH5CP": {
+      "file": "BaseTanStackRouterDevtoolsPanel-WQSUH5CP.js"
     },
-    "FloatingTanStackRouterDevtools-ZZHPXASI": {
-      "file": "FloatingTanStackRouterDevtools-ZZHPXASI.js"
+    "FloatingTanStackRouterDevtools-A367S7O4": {
+      "file": "FloatingTanStackRouterDevtools-A367S7O4.js"
     },
-    "chunk-3C2BMLHV": {
-      "file": "chunk-3C2BMLHV.js"
+    "chunk-LWAAGITP": {
+      "file": "chunk-LWAAGITP.js"
+    },
+    "chunk-KDVGFZWC": {
+      "file": "chunk-KDVGFZWC.js"
     },
     "chunk-TGF67CJS": {
       "file": "chunk-TGF67CJS.js"
     },
-    "chunk-SZYGNVHQ": {
-      "file": "chunk-SZYGNVHQ.js"
+    "chunk-VHHZD562": {
+      "file": "chunk-VHHZD562.js"
     },
-    "chunk-Z6MD5Z3G": {
-      "file": "chunk-Z6MD5Z3G.js"
-    },
-    "chunk-MSYNJQ2M": {
-      "file": "chunk-MSYNJQ2M.js"
-    },
-    "chunk-KDZ7CXOI": {
-      "file": "chunk-KDZ7CXOI.js"
+    "chunk-KV4S5HPH": {
+      "file": "chunk-KV4S5HPH.js"
     },
     "chunk-T46KWSWP": {
       "file": "chunk-T46KWSWP.js"

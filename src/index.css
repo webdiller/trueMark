@@ -6,6 +6,11 @@
 @theme inline {
   --text-32: 32px;
   --color-background: #f7f8fb;
+  --color-orange: #ff9500;
+  --color-gray: #b9b9b9;
+  --color-green: #34c759;
+  --color-icon-blue: #49a0f6;
+  --color-icon-busines: #6b8499;
   --font-heading: var(--font-heading);
   --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
@@ -17,18 +22,31 @@
 }
 /* Customize gravity ui */
 .g-select-control:not(.g-select-control_disabled):not(.g-select-control_no-active):active,
+.yc-select:active,
 .yc-button:active {
   transform: scale(1);
 }
+.yc-select {
+  background-color: white;
+}
 @layer base {
   * {
-    font-size: 16px;
-    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-family:
+      Roboto Flex,
+      sans-serif;
     line-height: 1.5;
     font-weight: 400;
     *::placeholder {
       font-size: 14px;
     }
+  }
+  button,
+  a {
+    @apply hover:cursor-pointer focus:outline-2 focus:outline-gray-300;
+  }
+  body {
+    @apply text-base font-normal text-black antialiased;
   }
   /* Custom scrollbar styling. Thanks @pranathiperii. */
   pre::-webkit-scrollbar {

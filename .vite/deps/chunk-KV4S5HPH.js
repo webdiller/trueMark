@@ -1,6 +1,17 @@
-import {
-  invariant
-} from "./chunk-KDZ7CXOI.js";
+// node_modules/tiny-invariant/dist/esm/tiny-invariant.js
+var isProduction = false;
+var prefix = "Invariant failed";
+function invariant(condition, message) {
+  if (condition) {
+    return;
+  }
+  if (isProduction) {
+    throw new Error(prefix);
+  }
+  var provided = typeof message === "function" ? message() : message;
+  var value = provided ? "".concat(prefix, ": ").concat(provided) : prefix;
+  throw new Error(value);
+}
 
 // node_modules/@tanstack/history/dist/esm/index.js
 var stateIndexKey = "__TSR_index";
@@ -3320,6 +3331,7 @@ var BaseRootRoute = class extends BaseRoute {
 };
 
 export {
+  invariant,
   createHistory,
   createBrowserHistory,
   createHashHistory,
@@ -3382,4 +3394,4 @@ export {
   retainSearchParams,
   stripSearchParams
 };
-//# sourceMappingURL=chunk-MSYNJQ2M.js.map
+//# sourceMappingURL=chunk-KV4S5HPH.js.map

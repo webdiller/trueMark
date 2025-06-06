@@ -13,6 +13,7 @@ import {
   getCssSelector,
   getLocationChangeInfo,
   handleHashScroll,
+  invariant,
   isNotFound,
   isRedirect,
   notFound,
@@ -26,10 +27,7 @@ import {
   setupScrollRestoration,
   storageKey,
   trimPathRight
-} from "./chunk-MSYNJQ2M.js";
-import {
-  invariant
-} from "./chunk-KDZ7CXOI.js";
+} from "./chunk-KV4S5HPH.js";
 import {
   require_react_dom
 } from "./chunk-T46KWSWP.js";
@@ -2561,4 +2559,4 @@ use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.developme
    * LICENSE file in the root directory of this source tree.
    *)
 */
-//# sourceMappingURL=chunk-Z6MD5Z3G.js.map
+//# sourceMappingURL=chunk-VHHZD562.js.map
