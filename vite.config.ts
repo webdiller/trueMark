@@ -15,7 +15,17 @@ export default defineConfig({
     },
   },
   server: {
-    port: 4000
+    port: 4000,
+    strictPort: true,
+    hmr: {
+      port: 4000
+    }
+  },
+  cacheDir: '.vite',
+  clearScreen: false,
+  build: {
+    outDir: 'dist',
+    emptyOutDir: true,
   },
   plugins: [react(), TanStackRouterVite(), tailwindcss()],
 })

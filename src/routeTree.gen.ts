@@ -19,6 +19,7 @@ import { Route as AboutImport } from './routes/about'
 import { Route as AppImport } from './routes/_app'
 import { Route as AppProfileRouteImport } from './routes/_app/profile/route'
 import { Route as AppTodosIndexImport } from './routes/_app/todos/index'
+import { Route as AppSurveysIndexImport } from './routes/_app/surveys/index'
 import { Route as AppTodosCreateImport } from './routes/_app/todos/create'
 import { Route as AppTodosTodoIdIndexImport } from './routes/_app/todos/$todoId/index'
 
@@ -66,6 +67,12 @@ const AppProfileRouteRoute = AppProfileRouteImport.update({
 const AppTodosIndexRoute = AppTodosIndexImport.update({
   id: '/todos/',
   path: '/todos/',
+  getParentRoute: () => AppRoute,
+} as any)
+
+const AppSurveysIndexRoute = AppSurveysIndexImport.update({
+  id: '/surveys/',
+  path: '/surveys/',
   getParentRoute: () => AppRoute,
 } as any)
 
@@ -134,6 +141,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AppTodosCreateImport
       parentRoute: typeof AppImport
     }
+    '/_app/surveys/': {
+      id: '/_app/surveys/'
+      path: '/surveys'
+      fullPath: '/surveys'
+      preLoaderRoute: typeof AppSurveysIndexImport
+      parentRoute: typeof AppImport
+    }
     '/_app/todos/': {
       id: '/_app/todos/'
       path: '/todos'
@@ -156,6 +170,7 @@ declare module '@tanstack/react-router' {
 interface AppRouteChildren {
   AppProfileRouteRoute: typeof AppProfileRouteRoute
   AppTodosCreateRoute: typeof AppTodosCreateRoute
+  AppSurveysIndexRoute: typeof AppSurveysIndexRoute
   AppTodosIndexRoute: typeof AppTodosIndexRoute
   AppTodosTodoIdIndexRoute: typeof AppTodosTodoIdIndexRoute
 }
@@ -163,6 +178,7 @@ interface AppRouteChildren {
 const AppRouteChildren: AppRouteChildren = {
   AppProfileRouteRoute: AppProfileRouteRoute,
   AppTodosCreateRoute: AppTodosCreateRoute,
+  AppSurveysIndexRoute: AppSurveysIndexRoute,
   AppTodosIndexRoute: AppTodosIndexRoute,
   AppTodosTodoIdIndexRoute: AppTodosTodoIdIndexRoute,
 }
@@ -177,6 +193,7 @@ export interface FileRoutesByFullPath {
   '/sign-up': typeof SignUpRoute
   '/profile': typeof AppProfileRouteRoute
   '/todos/create': typeof AppTodosCreateRoute
+  '/surveys': typeof AppSurveysIndexRoute
   '/todos': typeof AppTodosIndexRoute
   '/todos/$todoId': typeof AppTodosTodoIdIndexRoute
 }
@@ -189,6 +206,7 @@ export interface FileRoutesByTo {
   '/sign-up': typeof SignUpRoute
   '/profile': typeof AppProfileRouteRoute
   '/todos/create': typeof AppTodosCreateRoute
+  '/surveys': typeof AppSurveysIndexRoute
   '/todos': typeof AppTodosIndexRoute
   '/todos/$todoId': typeof AppTodosTodoIdIndexRoute
 }
@@ -202,6 +220,7 @@ export interface FileRoutesById {
   '/sign-up': typeof SignUpRoute
   '/_app/profile': typeof AppProfileRouteRoute
   '/_app/todos/create': typeof AppTodosCreateRoute
+  '/_app/surveys/': typeof AppSurveysIndexRoute
   '/_app/todos/': typeof AppTodosIndexRoute
   '/_app/todos/$todoId/': typeof AppTodosTodoIdIndexRoute
 }
@@ -216,6 +235,7 @@ export interface FileRouteTypes {
     | '/sign-up'
     | '/profile'
     | '/todos/create'
+    | '/surveys'
     | '/todos'
     | '/todos/$todoId'
   fileRoutesByTo: FileRoutesByTo
@@ -227,6 +247,7 @@ export interface FileRouteTypes {
     | '/sign-up'
     | '/profile'
     | '/todos/create'
+    | '/surveys'
     | '/todos'
     | '/todos/$todoId'
   id:
@@ -238,6 +259,7 @@ export interface FileRouteTypes {
     | '/sign-up'
     | '/_app/profile'
     | '/_app/todos/create'
+    | '/_app/surveys/'
     | '/_app/todos/'
     | '/_app/todos/$todoId/'
   fileRoutesById: FileRoutesById
@@ -284,6 +306,7 @@ export const routeTree = rootRoute
       "children": [
         "/_app/profile",
         "/_app/todos/create",
+        "/_app/surveys/",
         "/_app/todos/",
         "/_app/todos/$todoId/"
       ]
@@ -303,6 +326,10 @@ export const routeTree = rootRoute
     },
     "/_app/todos/create": {
       "filePath": "_app/todos/create.tsx",
+      "parent": "/_app"
+    },
+    "/_app/surveys/": {
+      "filePath": "_app/surveys/index.tsx",
       "parent": "/_app"
     },
     "/_app/todos/": {

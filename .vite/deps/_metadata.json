@@ -1,0 +1,118 @@
+{
+  "hash": "7677cd9d",
+  "configHash": "70bfbc46",
+  "lockfileHash": "9156900c",
+  "browserHash": "a649940b",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "0331316d",
+      "needsInterop": true
+    },
+    "react-dom": {
+      "src": "../../node_modules/react-dom/index.js",
+      "file": "react-dom.js",
+      "fileHash": "eb95d05f",
+      "needsInterop": true
+    },
+    "react/jsx-dev-runtime": {
+      "src": "../../node_modules/react/jsx-dev-runtime.js",
+      "file": "react_jsx-dev-runtime.js",
+      "fileHash": "9f3cc420",
+      "needsInterop": true
+    },
+    "react/jsx-runtime": {
+      "src": "../../node_modules/react/jsx-runtime.js",
+      "file": "react_jsx-runtime.js",
+      "fileHash": "e86562cd",
+      "needsInterop": true
+    },
+    "@gravity-ui/icons": {
+      "src": "../../node_modules/@gravity-ui/icons/esm/index.js",
+      "file": "@gravity-ui_icons.js",
+      "fileHash": "30e18969",
+      "needsInterop": false
+    },
+    "@gravity-ui/uikit": {
+      "src": "../../node_modules/@gravity-ui/uikit/build/esm/index.js",
+      "file": "@gravity-ui_uikit.js",
+      "fileHash": "bc73dff8",
+      "needsInterop": false
+    },
+    "@tanstack/react-query": {
+      "src": "../../node_modules/@tanstack/react-query/build/modern/index.js",
+      "file": "@tanstack_react-query.js",
+      "fileHash": "34531c5d",
+      "needsInterop": false
+    },
+    "@tanstack/react-router": {
+      "src": "../../node_modules/@tanstack/react-router/dist/esm/index.js",
+      "file": "@tanstack_react-router.js",
+      "fileHash": "134999ed",
+      "needsInterop": false
+    },
+    "@tanstack/router-devtools": {
+      "src": "../../node_modules/@tanstack/router-devtools/dist/esm/index.js",
+      "file": "@tanstack_router-devtools.js",
+      "fileHash": "51d1249c",
+      "needsInterop": false
+    },
+    "lucide-react": {
+      "src": "../../node_modules/lucide-react/dist/esm/lucide-react.js",
+      "file": "lucide-react.js",
+      "fileHash": "08c0d3e5",
+      "needsInterop": false
+    },
+    "query-string": {
+      "src": "../../node_modules/query-string/index.js",
+      "file": "query-string.js",
+      "fileHash": "f76ed5d0",
+      "needsInterop": false
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "b88b408a",
+      "needsInterop": true
+    }
+  },
+  "chunks": {
+    "BaseTanStackRouterDevtoolsPanel-DJ4OH3AX": {
+      "file": "BaseTanStackRouterDevtoolsPanel-DJ4OH3AX.js"
+    },
+    "FloatingTanStackRouterDevtools-ZZHPXASI": {
+      "file": "FloatingTanStackRouterDevtools-ZZHPXASI.js"
+    },
+    "chunk-3C2BMLHV": {
+      "file": "chunk-3C2BMLHV.js"
+    },
+    "chunk-TGF67CJS": {
+      "file": "chunk-TGF67CJS.js"
+    },
+    "chunk-SZYGNVHQ": {
+      "file": "chunk-SZYGNVHQ.js"
+    },
+    "chunk-Z6MD5Z3G": {
+      "file": "chunk-Z6MD5Z3G.js"
+    },
+    "chunk-MSYNJQ2M": {
+      "file": "chunk-MSYNJQ2M.js"
+    },
+    "chunk-KDZ7CXOI": {
+      "file": "chunk-KDZ7CXOI.js"
+    },
+    "chunk-T46KWSWP": {
+      "file": "chunk-T46KWSWP.js"
+    },
+    "chunk-XC26ZK3T": {
+      "file": "chunk-XC26ZK3T.js"
+    },
+    "chunk-E55NSNTN": {
+      "file": "chunk-E55NSNTN.js"
+    },
+    "chunk-4MBMRILA": {
+      "file": "chunk-4MBMRILA.js"
+    }
+  }
+}
